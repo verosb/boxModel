@@ -6,34 +6,34 @@ html, body{
 header{
     background-color: purple;
     height: 60px;
+    grid-area: header;
 
 }
 
-section{
-    display: flex;
-    /*flex-direction: row-reverse;*/
-    background-color: green;
-    overflow: hidden; 
-
-}
 
 nav{
     background-color: beige;
    /* float: left;*/
-    width: 25%;
+    grid-area: menú;
 }
 article{
     background-color: aquamarine;
     /*float: left;/**/
-    width: 75%;
+    grid-area: content;
     height: 80px;
 }
 footer{
     background-color: pink;
     height: 120px;
+    grid-area: footer;
 }
 #container{
     background-color: orange;
     max-width: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'menú content content content'
+    'footer footer footer footer';
 }
